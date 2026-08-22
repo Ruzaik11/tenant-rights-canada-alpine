@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tenant Rights Helper</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <div class="wrap">Tenant Rights Helper</div>
+  </header>
+
+  <div class="wrap">
+    <p class="phase"><strong>Beta</strong> This is a new service. Answers may be incomplete.</p>
+
+    <main>
+      <p class="caption">Renting in Ontario</p>
+      <h1>Ask a question about your tenancy</h1>
+      <p class="lead">Get an answer based on the Residential Tenancies Act, 2006. Each answer lists
+        the sections of the Act it comes from.</p>
+
+      <div class="notice">
+        <strong>This is legal information, not legal advice.</strong>
+        If you have a hearing or a deadline, contact a community legal clinic.
+      </div>
+
+      <form id="ask">
+        <label for="question">What is your question?</label>
+        <p class="hint">Do not include your name or address.</p>
+        <textarea id="question" rows="4" maxlength="1000" required></textarea>
+        <button type="submit">Ask question</button>
+      </form>
+
+      <section id="examples">
+        <h2>Common questions</h2>
+        <button type="button">How much notice is needed for a rent increase?</button>
+        <button type="button">Can my landlord keep a damage deposit?</button>
+        <button type="button">I got an N12 notice. What are my options?</button>
+      </section>
+
+      <div id="log"></div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      Tenant Rights Helper is an independent service, not affiliated with the Government of Ontario
+      or the Landlord and Tenant Board.
+    </div>
+  </footer>
+</body>
+</html>
