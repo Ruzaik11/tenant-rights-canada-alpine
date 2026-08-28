@@ -6,6 +6,8 @@ generated, with links to the sections they cite.
 
 > This is legal information, not legal advice.
 
+Backend: [tenant-rights-rag-fastapi](https://github.com/Ruzaik11/tenant-rights-rag-fastapi)
+
 ![Home page](screenshots/home.png)
 
 ![An answered question with sources](screenshots/answer.png)
@@ -23,7 +25,7 @@ events: `token` for each piece of the answer, `citations` for the sections used,
 
 ## Running locally
 
-1. Start the backend on `http://localhost:8080`.
+1. Start the [backend](https://github.com/Ruzaik11/tenant-rights-rag-fastapi) on `http://localhost:8080`.
 2. Serve this folder:
 
    ```sh
