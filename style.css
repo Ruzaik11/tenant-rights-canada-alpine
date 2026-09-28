@@ -50,6 +50,15 @@ h2 { font-size: 27px; margin: 0 0 16px; }
 label { display: block; font-size: 24px; font-weight: 700; }
 .hint { color: var(--muted); margin: 4px 0 14px; }
 
+select {
+  display: block;
+  margin: 8px 0 30px;
+  padding: 6px 8px;
+  border: 2px solid var(--text);
+  background: #fff;
+  font: inherit;
+}
+
 textarea {
   width: 100%;
   padding: 8px;
@@ -87,10 +96,16 @@ form button:disabled { opacity: .5; }
 .entry { border-top: 3px solid var(--green); padding-top: 30px; margin-bottom: 40px; }
 .num { color: var(--green); font-size: 16px; font-weight: 700; }
 .q { font-size: 27px; font-weight: 700; margin: 4px 0 20px; }
-.a { white-space: pre-wrap; margin: 0; }
-.a:empty::before { content: "Searching the Act…"; color: var(--muted); }
+.status { color: var(--muted); margin: 0; }
+.status.error { color: #d4351c; }
 
-.sources { background: var(--light); padding: 16px 20px; margin: 24px 0 0; list-style: none; font-size: 16px; }
+.answer p { margin: 0 0 16px; }
+.answer ul { margin: 0 0 16px; padding-left: 24px; }
+.answer li { margin-bottom: 6px; }
+
+.sources-title { font-size: 19px; margin: 24px 0 8px; }
+.sources { margin: 0; padding-left: 24px; font-size: 16px; }
+.sources li { margin-bottom: 6px; }
 .sources a { color: var(--green); }
 
 footer {

@@ -3,23 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tenant Rights Helper</title>
+  <title>Tenant Rights Canada</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
 </head>
 <body>
   <header>
-    <div class="wrap">Tenant Rights Helper</div>
+    <div class="wrap">Tenant Rights Canada</div>
   </header>
 
   <div class="wrap">
     <p class="phase"><strong>Beta</strong> This is a new service. Answers may be incomplete.</p>
 
     <main>
-      <p class="caption">Renting in Ontario</p>
+      <p class="caption" id="caption">Renting in Ontario</p>
       <h1>Ask a question about your tenancy</h1>
-      <p class="lead">Get an answer based on the Residential Tenancies Act, 2006. Each answer lists
-        the sections of the Act it comes from.</p>
+      <p class="lead">Get a plain-language answer based on the Residential Tenancies Act, 2006.</p>
 
       <div class="notice">
         <strong>This is legal information, not legal advice.</strong>
@@ -27,6 +26,11 @@
       </div>
 
       <form id="ask">
+        <label for="jurisdiction">Where do you rent?</label>
+        <select id="jurisdiction">
+          <option value="ON" data-name="Ontario">Ontario</option>
+        </select>
+
         <label for="question">What is your question?</label>
         <p class="hint">Do not include your name or address.</p>
         <textarea id="question" rows="4" maxlength="1000" required></textarea>
